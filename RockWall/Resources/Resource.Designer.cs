@@ -91,44 +91,62 @@ namespace RockWall
 			// aapt resource value: 0x7f070002
 			public const int CheckInButton = 2131165186;
 			
-			// aapt resource value: 0x7f07000f
-			public const int CreateAccountButton = 2131165199;
+			// aapt resource value: 0x7f070014
+			public const int CreateAccountButton = 2131165204;
 			
 			// aapt resource value: 0x7f070000
 			public const int CreateAccountText = 2131165184;
 			
+			// aapt resource value: 0x7f07000d
+			public const int WaiverView1 = 2131165197;
+			
+			// aapt resource value: 0x7f07000c
+			public const int btnDialogEmail = 2131165196;
+			
+			// aapt resource value: 0x7f07000a
+			public const int checkBoxBlay = 2131165194;
+			
 			// aapt resource value: 0x7f070009
-			public const int btnDialogEmail = 2131165193;
+			public const int checkBoxFemale = 2131165193;
+			
+			// aapt resource value: 0x7f07000b
+			public const int checkBoxLead = 2131165195;
+			
+			// aapt resource value: 0x7f070008
+			public const int checkBoxMale = 2131165192;
 			
 			// aapt resource value: 0x7f070001
 			public const int editText1 = 2131165185;
 			
-			// aapt resource value: 0x7f07000c
-			public const int scrollView1 = 2131165196;
+			// aapt resource value: 0x7f070015
+			public const int imageView1 = 2131165205;
 			
-			// aapt resource value: 0x7f07000a
-			public const int scrollView2 = 2131165194;
+			// aapt resource value: 0x7f070012
+			public const int imageView2 = 2131165202;
+			
+			// aapt resource value: 0x7f070010
+			public const int scrollView1 = 2131165200;
 			
 			// aapt resource value: 0x7f07000e
-			public const int signUpButton = 2131165198;
+			public const int scrollView2 = 2131165198;
 			
-			// aapt resource value: 0x7f07000d
-			public const int signaturePadView1 = 2131165197;
+			// aapt resource value: 0x7f070013
+			public const int signUpButton = 2131165203;
 			
-			// aapt resource value: 0x7f07000b
-			public const int textView1 = 2131165195;
+			// aapt resource value: 0x7f070011
+			public const int signaturePadView1 = 2131165201;
 			
-			// aapt resource value: 0x7f070004
-			public const int txtEmail = 2131165188;
-			
-			// aapt resource value: 0x7f070003
-			public const int txtFullName = 2131165187;
-			
-			// aapt resource value: 0x7f070008
-			public const int txtPhoneNumber = 2131165192;
+			// aapt resource value: 0x7f07000f
+			public const int textView1 = 2131165199;
 			
 			// aapt resource value: 0x7f070005
-			public const int txtUserAddress = 2131165189;
+			public const int txtEmail = 2131165189;
+			
+			// aapt resource value: 0x7f070003
+			public const int txtFirstName = 2131165187;
+			
+			// aapt resource value: 0x7f070004
+			public const int txtLastName = 2131165188;
 			
 			// aapt resource value: 0x7f070006
 			public const int txtUserDOB = 2131165190;
@@ -160,6 +178,9 @@ namespace RockWall
 			
 			// aapt resource value: 0x7f030003
 			public const int Main = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int TestOutput = 2130903044;
 			
 			static Layout()
 			{

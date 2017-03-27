@@ -100,6 +100,13 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "RockWall.dll" comes first in this list. */
 		"RockWall.dll",
 		"SignaturePad.dll",
+		"SQLite-net.dll",
+		"SQLitePCL.raw.dll",
+		"SQLitePCLRaw.batteries_green.dll",
+		"SQLitePCLRaw.batteries_v2.dll",
+		"SQLitePCLRaw.core.dll",
+		"SQLitePCLRaw.lib.e_sqlite3.dll",
+		"SQLitePCLRaw.provider.e_sqlite3.dll",
 		"System.Threading.dll",
 		"System.Runtime.dll",
 		"System.Collections.dll",
@@ -110,6 +117,10 @@ class MonoPackageManager_Resources {
 		"System.Runtime.InteropServices.dll",
 		"System.Runtime.Extensions.dll",
 		"System.Reflection.Extensions.dll",
+		"System.Linq.Expressions.dll",
+		"System.Globalization.dll",
+		"System.Threading.Tasks.dll",
+		"System.Resources.ResourceManager.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

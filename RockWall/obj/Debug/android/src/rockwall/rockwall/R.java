@@ -22,19 +22,25 @@ public final class R {
     }
     public static final class id {
         public static final int CheckInButton=0x7f070002;
-        public static final int CreateAccountButton=0x7f07000f;
+        public static final int CreateAccountButton=0x7f070014;
         public static final int CreateAccountText=0x7f070000;
-        public static final int btnDialogEmail=0x7f070009;
+        public static final int WaiverView1=0x7f07000d;
+        public static final int btnDialogEmail=0x7f07000c;
+        public static final int checkBoxBlay=0x7f07000a;
+        public static final int checkBoxFemale=0x7f070009;
+        public static final int checkBoxLead=0x7f07000b;
+        public static final int checkBoxMale=0x7f070008;
         public static final int editText1=0x7f070001;
-        public static final int scrollView1=0x7f07000c;
-        public static final int scrollView2=0x7f07000a;
-        public static final int signUpButton=0x7f07000e;
-        public static final int signaturePadView1=0x7f07000d;
-        public static final int textView1=0x7f07000b;
-        public static final int txtEmail=0x7f070004;
-        public static final int txtFullName=0x7f070003;
-        public static final int txtPhoneNumber=0x7f070008;
-        public static final int txtUserAddress=0x7f070005;
+        public static final int imageView1=0x7f070015;
+        public static final int imageView2=0x7f070012;
+        public static final int scrollView1=0x7f070010;
+        public static final int scrollView2=0x7f07000e;
+        public static final int signUpButton=0x7f070013;
+        public static final int signaturePadView1=0x7f070011;
+        public static final int textView1=0x7f07000f;
+        public static final int txtEmail=0x7f070005;
+        public static final int txtFirstName=0x7f070003;
+        public static final int txtLastName=0x7f070004;
         public static final int txtUserDOB=0x7f070006;
         public static final int txtUserStudentID=0x7f070007;
     }
@@ -43,6 +49,7 @@ public final class R {
         public static final int layout2=0x7f030001;
         public static final int layout3=0x7f030002;
         public static final int main=0x7f030003;
+        public static final int testoutput=0x7f030004;
     }
     public static final class string {
         public static final int ApplicationName=0x7f050001;

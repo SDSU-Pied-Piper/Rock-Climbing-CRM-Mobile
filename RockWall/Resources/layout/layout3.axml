@@ -3,6 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/WaiverView1"
     android:minWidth="25px"
     android:minHeight="25px"
     android:background="#DEDEDC">
@@ -44,10 +45,16 @@
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:id="@+id/signaturePadView1" />
+                android:layout_height="81.0dp"
+                android:id="@+id/signaturePadView1"
+                android:background="@android:color/black" />
         </TableLayout>
     </ScrollView>
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="72.0dp"
+        android:id="@+id/imageView2" />
     <Button
         android:text="Sign Up!"
         android:layout_width="match_parent"

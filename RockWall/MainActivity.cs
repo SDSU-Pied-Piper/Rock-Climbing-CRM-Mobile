@@ -5,6 +5,9 @@ using Android.Runtime;
 using System;
 using System.Threading;
 using Android.Content;
+using RockWall.Resources.DBMODEL;
+using System.Collections.Generic;
+using SignaturePad;
 
 namespace RockWall
 {
@@ -13,16 +16,23 @@ namespace RockWall
     {
         private Button mButtonCheckIn;
         Button mButtonSignIn;
-        Button mButtonSignedWaiver;
+        PatronsDB Pdb;
+        List<Patron> firstList = new List<Patron>();
+
+        
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+
+            Pdb = new PatronsDB(); // Create or start local database
+            Pdb.createDataBase();
 
             // Set our view from the "main" layout resource
              SetContentView (Resource.Layout.Main);
             mButtonCheckIn = FindViewById<Button>(Resource.Id.CheckInButton);
             mButtonSignIn = FindViewById<Button>(Resource.Id.CreateAccountButton);
             mButtonSignIn.Click += MButtonSignIn_Click;
+            LoadData();
 
             mButtonCheckIn.Click += (object sender, EventArgs args) =>
             {
@@ -61,6 +71,16 @@ namespace RockWall
         private void ActLikeARequest()
         {
             Thread.Sleep(3000);
+        }
+
+        private void LoadData()
+        {
+            firstList = Pdb.selectTablePatron();
+
+            foreach (Patron value in firstList)
+            {
+                Console.WriteLine(value.firstName);
+            }
         }
     }
 

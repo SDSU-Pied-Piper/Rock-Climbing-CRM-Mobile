@@ -4,7 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <EditText
-        android:id="@+id/txtFullName"
+        android:id="@+id/txtFirstName"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:background="@drawable/edit_text_style"
@@ -17,7 +17,21 @@
         android:textColor="#000"
         android:textColorHint="@android:color/darker_gray" />
     <EditText
-        android:layout_below="@id/txtFullName"
+        android:id="@+id/txtLastName"
+        android:layout_below="@id/txtFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edit_text_style"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:hint="Last Name..."
+        android:paddingLeft="10dp"
+        android:textColor="#000"
+        android:textColorHint="@android:color/darker_gray" />
+    <EditText
+        android:layout_below="@id/txtLastName"
         android:inputType="textEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="35dp"
@@ -32,20 +46,6 @@
         android:textColorHint="@android:color/darker_gray" />
     <EditText
         android:layout_below="@id/txtEmail"
-        android:inputType="textPostalAddress"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:id="@+id/txtUserAddress"
-        android:background="@drawable/edit_text_style"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:hint="Address..."
-        android:paddingLeft="10dp"
-        android:textColor="#000"
-        android:textColorHint="@android:color/darker_gray" />
-    <EditText
-        android:layout_below="@id/txtUserAddress"
         android:inputType="date"
         android:layout_width="match_parent"
         android:layout_height="35dp"
@@ -72,40 +72,47 @@
         android:paddingLeft="10dp"
         android:textColor="#000"
         android:textColorHint="@android:color/darker_gray" />
-    <EditText
-        android:layout_below="@id/txtUserStudentID"
-        android:inputType="phone"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:id="@+id/txtPhoneNumber"
-        android:background="@drawable/edit_text_style"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:hint="Phone #..."
-        android:paddingLeft="10dp"
-        android:textColor="#000"
-        android:textColorHint="@android:color/darker_gray" />
-    <RelativeLayout
+    <CheckBox
+        android:text="Male"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtPhoneNumber"
-        android:layout_marginTop="50dp">
-        <Button
-            android:text="Next!"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnDialogEmail"
-            android:textSize="20dp"
-            android:textColor="#fff"
-            android:textStyle="bold"
-            android:paddingLeft="5dp"
-            android:paddingBottom="5dp"
-            android:paddingRight="5dp"
-            android:height="70dp"
-            android:paddingTop="2dp"
-            android:background="@drawable/ButtonSignUpStyle"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="30dp" />
-    </RelativeLayout>
+        android:layout_below="@id/txtUserStudentID"
+        android:id="@+id/checkBoxMale" />
+    <CheckBox
+        android:text="Female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/checkBoxMale"
+        android:layout_below="@id/txtUserStudentID"
+        android:id="@+id/checkBoxFemale" />
+    <CheckBox
+        android:text="Blay Certified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxMale"
+        android:id="@+id/checkBoxBlay" />
+    <CheckBox
+        android:text="Lead Certified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxBlay"
+        android:id="@+id/checkBoxLead" />
+    <Button
+        android:text="Next!"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxLead"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnDialogEmail"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:height="50dp"
+        android:paddingTop="2dp"
+        android:background="@drawable/ButtonSignUpStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp" />
 </RelativeLayout>

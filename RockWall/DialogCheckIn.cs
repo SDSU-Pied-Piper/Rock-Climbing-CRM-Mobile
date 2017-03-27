@@ -9,7 +9,10 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-
+using Android.Database.Sqlite;
+using System.Data;
+using System.Data.SqlClient;
+    
 
 namespace RockWall
 {
@@ -52,9 +55,9 @@ namespace RockWall
             return view;
         }
 
-       private void MBtnCheckIn_Click(object sender, EventArgs e) // When User Clicks Sign Up Method. Uses Created Class 
+       private void MBtnCheckIn_Click(object sender, EventArgs e) // When User Clicks Check in Method. Uses Created Class 
         {
-
+            
             mOnCheckInComplete.Invoke(this, new OnCheckInEventArgs(checkIn.Text)); //broadcast that it accepts the check in text. Invokes event
             this.Dismiss();//Makes the dialog go away. 
 
